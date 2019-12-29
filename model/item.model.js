@@ -11,4 +11,4 @@ var itemSchema = new mongoose.Schema({
 });
 
 //this model will create a collection called item, and will requires above schema to be stored
-mongoose.model("item", itemSchema)
+mongoose.model("item123", itemSchema)

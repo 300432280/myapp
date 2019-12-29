@@ -3,5 +3,6 @@ block content
 	h1= title
 	p Welcome to #{title}
 	form(action="/", method="POST")
-		input(name="lead_email", type="email", placeholder="Enter email address")
+		input(name="ItemToSubmit", type="text", placeholder="Enter item name here")
+		input(name="priceToSubmit", type="text", placeholder="Enter price for the item above")
 		button(type="submit") Submit
