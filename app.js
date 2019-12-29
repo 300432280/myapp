@@ -9,13 +9,16 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+//
+//import item shema
+var item = require("./model/item.model");
 
 //connect to mongo DB
 mongoose.connect("mongodb://localhost:27017/myapp",{ useUnifiedTopology: true }, (err)=>{
 	if (!err){
 		console.log("Success connect to server !!!!!!");
 	} else {
-		console.log("error connect to DB")
+		console.log("error connect to DB");
 	}
 })
 
