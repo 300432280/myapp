@@ -21,7 +21,7 @@ mongoose.connect("mongodb://localhost:27017/myapp",{ useUnifiedTopology: true },
 		console.log("error connect to DB");
 	}
 })
-
+///////////////////////
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
